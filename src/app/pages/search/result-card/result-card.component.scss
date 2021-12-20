@@ -1,0 +1,45 @@
+.result-card-component {
+  height: 100%;
+  margin-bottom: 12px;
+  text-align: center;
+
+  &:hover {
+
+  }
+
+  ::ng-deep .favorite-btn {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.background {
+  position: relative;
+  padding-bottom: 140%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform .3s;
+
+  // Fix for weird transition bug
+  border: 1px solid transparent;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 100;
+  color: white;
+}
+
+.placeholder-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}

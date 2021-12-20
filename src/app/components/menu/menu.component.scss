@@ -1,0 +1,35 @@
+nav {
+  background-color: rgba(0, 0, 0, .7);
+  box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 50%);
+}
+
+li {
+  padding: 8px;
+
+  .active {
+    color: red;
+    border-color: transparent;
+  }
+
+  .disabled {
+    pointer-events: none;
+  }
+
+  a:hover {
+    border-color: transparent;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  background: red;
+  border-radius: 100%;
+}

@@ -1,0 +1,43 @@
+<ng-container *ngIf="details">
+    <div class="show-details-component">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row align-items-center">
+                        <div class="col-5">
+                            <div class="position-relative">
+                                <app-favorite-btn [id]="details.id" [result]="result" size="large"></app-favorite-btn>
+                                <img *ngIf="details.image; else noImage" [src]="details.image.original"
+                                     [alt]="details.name">
+                                <ng-template #noImage>
+                                    <img class="placeholder-img" src="assets/img/placeholder-image.png"
+                                         [alt]="details.name">
+                                </ng-template>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <h1 *ngIf="details.name">{{ details.name }}</h1>
+                            <p *ngIf="details.summary" [innerHTML]="details.summary"></p>
+                            <p *ngIf="details.genres">{{ details.genres.join(', ') }}</p>
+                            <p *ngIf="details.language">{{ details.language }}</p>
+                            <p *ngIf="details.premiered">{{'GENERAL.PREMIERED' | translate}}:
+                                {{ details.premiered }}</p>
+                            <p *ngIf="details.rating.average">{{ 'GENERAL.RATING' | translate }}:
+                                {{ details.rating.average }}</p>
+                            <div class="d-flex">
+                                <a *ngIf="details.officialSite" [href]="details.officialSite"
+                                   target="_blank">{{ 'GENERAL.OFFICIAL_SITE' | translate }}</a>
+                                <a *ngIf="details.externals.imdb"
+                                   [href]="'https://www.imdb.com/title/' + details.externals.imdb" target="_blank"><img
+                                        src="assets/img/imdb.svg" alt="imdb logo"></a>
+                                <a *ngIf="details.externals.thetvdb"
+                                   [href]="'https://thetvdb.com/search?query=' + details.externals.thetvdb"><img
+                                        class="tvdb" src="assets/img/tvdb-logo.png" alt="tvdb logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

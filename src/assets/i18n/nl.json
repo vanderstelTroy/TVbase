@@ -1,0 +1,25 @@
+{
+  "MENU_ITEMS": {
+    "SEARCH": "Zoeken",
+    "SHOW_DETAIL": "Show detail",
+    "SAVED_SHOWS": "Opgeslagen shows"
+  },
+  "LANGUAGES": {
+    "DUTCH": "Nederlands",
+    "ENGLISH": "Engels"
+  },
+  "SEARCH_BAR": {
+    "SEARCHING_FAVORITE_SHOWS": "Zoek uw favoriete shows!",
+    "SEARCHING_SAVED_SHOWS": "Doorzoek uw opgeslagen shows!"
+  },
+  "GENERAL": {
+    "SEARCH": "Zoeken",
+    "OFFICIAL_SITE": "Officiële website",
+    "RATING": "Beoordeling",
+    "PREMIERED": "In première gegaan",
+    "UNDERSTOOD": "Begrepen",
+    "INCOMPLETE_LANGUAGE_MESSAGE": "Helaas ondersteund de API momenteel nog geen nederlands, sommige info zal hierdoor niet vertaald zijn. Excuses voor het ongemak",
+    "SUCCESSFULLY_ADDED": "Succesvol \"{{name}}\" toegevoegd aan je favorieten!",
+    "SUCCESSFULLY_REMOVED": "Succesvol \"{{name}}\" verwijderd uit je favorieten!"
+  }
+}

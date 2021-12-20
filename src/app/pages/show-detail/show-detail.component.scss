@@ -1,0 +1,28 @@
+.show-details-component {
+  .row .row {
+    height: calc(100vh - 72px);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 5px 16px;
+    margin-right: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &:hover img {
+      opacity: .7;
+    }
+  }
+
+  .tvdb {
+    max-height: 42px;
+  }
+
+  ::ng-deep {
+    .favorite-btn {
+      top: 16px;
+      right: 16px;
+    }
+  }
+}

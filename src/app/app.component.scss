@@ -1,0 +1,19 @@
+#main-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../assets/img/movie-wallpaper.jpeg');
+  background-size: 1100px;
+  background-position: 0 0;
+  filter: brightness(.3) blur(1px);
+  z-index: -1;
+  animation: scroll 40s infinite linear;
+}
+
+@keyframes scroll {
+  to {
+    background-position: 1100px 700px;
+  }
+}

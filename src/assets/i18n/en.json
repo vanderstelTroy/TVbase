@@ -1,0 +1,25 @@
+{
+  "MENU_ITEMS": {
+    "SEARCH": "Search",
+    "SHOW_DETAIL": "Show detail",
+    "SAVED_SHOWS": "Saved shows"
+  },
+  "LANGUAGES": {
+    "DUTCH": "Dutch",
+    "ENGLISH": "English"
+  },
+  "SEARCH_BAR": {
+    "SEARCHING_FAVORITE_SHOWS": "Try searching your favorite shows!",
+    "SEARCHING_SAVED_SHOWS": "Try searching your saved shows!"
+  },
+  "GENERAL": {
+    "SEARCH": "Search",
+    "OFFICIAL_SITE": "Official site",
+    "RATING": "Rating",
+    "PREMIERED": "Premiered",
+    "UNDERSTOOD": "Understood",
+    "INCOMPLETE_LANGUAGE_MESSAGE": "Unfortunately, the API currently does not support Dutch, this info will be shown in English. Sorry for the inconvenience",
+    "SUCCESSFULLY_ADDED": "Successfully added \"{{name}}\" to your favorites!",
+    "SUCCESSFULLY_REMOVED": "Successfully removed \"{{name}}\" from your favorites!"
+  }
+}

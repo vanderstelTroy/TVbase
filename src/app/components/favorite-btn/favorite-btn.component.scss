@@ -1,0 +1,31 @@
+.favorite-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+  z-index: 1;
+  transition: all .3s;
+
+  &:hover {
+    color: pink;
+    transform: scale(1.1);
+    transition: all .3s;
+  }
+
+  &.active {
+    color: red;
+    transition: all .3s;
+  }
+
+  &.large {
+    height: 52px;
+    width: 52px;
+    font-size: 36px;
+  }
+}

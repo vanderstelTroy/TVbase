@@ -1,0 +1,7 @@
+<div class="modal-body">
+    <p>{{ content | translate }}</p>
+</div>
+<div class="modal-footer" *ngIf="closeBtn">
+    <button type="button" class="btn btn-outline-dark"
+            (click)="activeModal.close('Save click')">{{ closeBtn | translate }}</button>
+</div>

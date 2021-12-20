@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-search-bar (searchEmit)="search($event)" title="SEARCH_BAR.SEARCHING_FAVORITE_SHOWS"></app-search-bar>
+        </div>
+    </div>
+    <div class="row row-cols-5" *ngIf="results.length">
+        <div class="col" *ngFor="let result of results">
+            <app-result-card [result]="result"></app-result-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="result-card-component position-relative" [ngbTooltip]="result.show.name"
+     [routerLink]="['/show-detail', result.show.id]">
+    <p class="title ellipsize">{{ result.show.name }}</p>
+    <div class="background pointer" [style]="'background-image: url(' + result.show?.image?.medium + ')'">
+        <app-favorite-btn [result]="result"></app-favorite-btn>
+        <img *ngIf="!result.show.image" class="placeholder-img" src="assets/img/placeholder.png"
+             [alt]="result.show.name">
+    </div>
+</div>
